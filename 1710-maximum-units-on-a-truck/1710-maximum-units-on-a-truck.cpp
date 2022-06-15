@@ -8,6 +8,7 @@ public:
             int unitTrucksize=min(boxtype[0],remainingTrucksize);
             totalunits+=unitTrucksize*boxtype[1];
             remainingTrucksize-=unitTrucksize;
+            if(truckSize==0) break;
         }
         return totalunits;
     }
